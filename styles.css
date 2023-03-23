@@ -1,0 +1,49 @@
+/*
+Elementos
+
+     ul - lista no ordenada
+     ol - lista ordenada
+     p - párrafo
+     div - block
+     a - ancore (para agregar links)
+     table - tablas
+    ...
+Selectores
+
+     id - elemento único ([])
+     class - repite atributos a todos los que integran la clase (.)
+     atributos - caracteristicas que debe tener el/los elementos (widh='100px';color...)
+     tags - p, a ...
+*/
+
+/* Seleccionar por id */
+#t1 {
+    color: blueviolet;
+}
+/* Seleccionar por clase */
+.t2{
+    color: aquamarine;
+}
+/* Seleccionar por atributo */
+[atributo] {
+    color:crimson;
+}
+[atributo="nombre"]{
+    color: blue;
+}
+/* Seleccionar por tag */
+h6 {
+    color: coral;
+}
+/* Editar contenedor (clase)*/
+.contenedor > p {
+    color: violet;
+}
+.contenedor p.pseudoelemento:before {
+    content:"$";
+    color: red;  
+}
+.contenedor p.pseudoelemento:after {
+    content:"MXN";
+    color:green;  
+}
